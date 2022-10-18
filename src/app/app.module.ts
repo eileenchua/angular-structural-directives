@@ -12,12 +12,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { IfNotDirective } from './directives/if-not.directive';
 import { IsRoleDirective } from './directives/is-role.directive';
+import { NotElseDirective } from "./directives/not-else.directive";
 
 @NgModule({
     declarations: [
         AppComponent,
         IfNotDirective,
-        IsRoleDirective
+        IsRoleDirective,
+        NotElseDirective
     ],
     imports: [
         BrowserModule,

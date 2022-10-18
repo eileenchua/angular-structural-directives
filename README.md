@@ -1,4 +1,22 @@
-# AngularStructuralDirectives
+# Angular Structural Directives
+
+## About
+
+This demo was first presented at Angular Singapore's meetup on 4th October 2022. Check out [@angularsg](https://twitter.com/angularsg) on Twitter and join us in our upcoming meetups!
+
+Examples:
+
+- If Not
+- If Not + Else (multiple inputs)
+- Role based access
+
+Slides: https://speakerdeck.com/eileenchua/structural-directives-angular-singapore
+
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/eileenchua/angular-structural-directives)
+
+Connect with me on [Twitter](https://twitter.com/eileenbuilds).
+
+---
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
 

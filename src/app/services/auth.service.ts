@@ -8,7 +8,7 @@ export class AuthService {
     get user() {
         return {
             name: "Eileen",
-            permission: "Member"
+            permission: "Prestige" // Update this to "Member" to see the section for members
         }
     }
 
@@ -17,9 +17,4 @@ export class AuthService {
     checkUserPermission(role: string) {
         return this.user.permission === role;
     }
-}
-
-interface UserDetails {
-    name: string,
-    permission: string
 }

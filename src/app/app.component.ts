@@ -7,12 +7,9 @@ import { AuthService } from "./services/auth.service";
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-    title = 'angular-structural-directives';
 
     raining = true;
 
-    isMember = false;
-    isPrestigeMember = false;
     user = this._authService.user;
 
     constructor(
@@ -21,8 +18,5 @@ export class AppComponent implements OnInit {
 
     }
 
-    ngOnInit(): void {
-        this.isMember = this.user.permission.includes(("Member"));
-        this.isPrestigeMember = this.user.permission.includes("Prestige");
-    }
+    ngOnInit(): void { }
 }

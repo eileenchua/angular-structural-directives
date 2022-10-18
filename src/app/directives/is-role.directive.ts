@@ -6,6 +6,9 @@ import { AuthService } from "../services/auth.service";
 })
 export class IsRoleDirective {
 
+    /**
+     * Use the same input name as the selector
+    */
     @Input() set isRole(role: string) {
         if (this._authService.checkUserPermission(role)) {
             this._viewContainer.createEmbeddedView(this._template);

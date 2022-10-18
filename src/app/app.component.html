@@ -1,12 +1,20 @@
 <div class="container">
     <div class="example">
-        <h2>Example 1: IfNot / Else</h2>
+        <h2>Example 1: If Not</h2>
         <button mat-raised-button color="primary" (click)="raining = !raining">
             Toggle weather
         </button>
         <div>Is it not raining? {{raining ? 'Yes': 'No'}}</div>
-        <!-- <div *appIfNot="raining">Stay in!</div> -->
-        <div *appIfNot="raining; else notRaining">Stay in!</div>
+        <div *appIfNot="raining">Stay in!</div>
+    </div>
+
+    <div class="example">
+        <h2>Example 1 Extended: If Not + Else</h2>
+        <button mat-raised-button color="primary" (click)="raining = !raining">
+            Toggle weather
+        </button>
+        <div>Is it not raining? {{raining ? 'Yes': 'No'}}</div>
+        <div *appNot="raining; else notRaining">Stay in!</div>
 
         <ng-template #notRaining>
             <div>Go out!</div>
@@ -17,40 +25,16 @@
         <h2>Example 2: Role Access</h2>
         <div>
             User: {{user.name}}<br>
-            Membership: {{user.permission}}<br><br>
-            (Normal) Member? {{isMember ? 'Yes': 'No'}}<br>
-            Prestige member? {{isPrestigeMember ? 'Yes': 'No'}}
+            Access: {{user.permission}} <span class="example__comment">// Change this to "Member" in
+                auth.service.ts</span><br><br>
         </div>
         <div class="content">
-            <div *ngIf="isMember">
+            <div *isRole="'Member'">
                 This content is meant for members only.
             </div>
-            <div *ngIf="isPrestigeMember">
+            <div *isRole="'Prestige'">
                 This content is meant for prestige members only.
             </div>
         </div>
-    </div>
-</div>
-
-<div *ngIf="false" class="example">
-    <h2>Example 2: Role Access</h2>
-    <!-- <button mat-raised-button color="primary" (click)="isMember = !isMember; isPrestigeMember = !isPrestigeMember">
-                Toggle membership
-            </button> -->
-    <div>(Normal) Member? {{isMember ? 'Yes': 'No'}}</div>
-    <div>Prestige member? {{isPrestigeMember ? 'Yes': 'No'}}</div>
-    <div class="content">
-        <div *ngIf="isMember">
-            This content is meant for members only.
-        </div>
-        <div *ngIf="isPrestigeMember">
-            This content is meant for prestige members only.
-        </div>
-        <!-- <div *isRole="'Member'">
-                    This content is meant for members only.
-                </div>
-                <div *isRole="'Prestige'">
-                    This content is meant for prestige members only.
-                </div> -->
     </div>
 </div>

@@ -6,6 +6,9 @@
     &:not(:last-child) {
         margin-bottom: 36px;
     }
+    &__comment {
+        color: slategray;
+    }
 }
 
 .content {
