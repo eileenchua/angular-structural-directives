@@ -14,7 +14,7 @@ Slides: https://speakerdeck.com/eileenchua/structural-directives-in-angular
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/fork/github/eileenchua/angular-structural-directives?title=Angular%20Structural%20Directives)
 
-Connect with me on [Twitter](https://twitter.com/eileenbuilds).
+Connect with me on [Twitter](https://twitter.com/eileenthedev).
 
 ---
 
